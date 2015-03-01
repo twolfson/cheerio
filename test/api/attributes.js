@@ -286,7 +286,7 @@ describe('$(...)', function() {
       var val = $('select#one').val();
       expect(val).to.equal('option_selected');
     });
-    it('.val(): on select with no value should get text', function() {
+    it.only('.val(): on select with no value should get text', function() {
       var val = $('select#one-valueless').val();
       expect(val).to.equal('Option selected');
     });
