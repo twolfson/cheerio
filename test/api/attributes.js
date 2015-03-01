@@ -308,7 +308,7 @@ describe('$(...)', function() {
     });
     it('.val(): on multiple select should get an array of values', function() {
       var val = $('select#multi').val();
-      expect(val).to.have.length(2);
+      expect(val).to.have.eql(['2', '3']);
     });
     it('.val(): on multiple select with no value attribute should get an array of text content', function() {
       var val = $('select#multi-valueless').val();
