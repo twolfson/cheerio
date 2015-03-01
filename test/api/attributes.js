@@ -294,7 +294,7 @@ describe('$(...)', function() {
       var val = $('select#one-html-entity').val();
       expect(val).to.equal('Option <selected>');
     });
-    it.only('.val(): on select with no value should get text content', function() {
+    it('.val(): on select with no value should get text content', function() {
       var val = $('select#one-nested').val();
       expect(val).to.equal('Option selected');
     });
