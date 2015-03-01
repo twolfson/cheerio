@@ -310,6 +310,10 @@ describe('$(...)', function() {
       var val = $('select#multi').val();
       expect(val).to.have.length(2);
     });
+    it('.val(): on multiple select with no value attribute should get an array of text content', function() {
+      var val = $('select#multi').val();
+      expect(val).to.have.length(2);
+    });
     it('.val(value): on input text should set value', function() {
       var element = $('input[type="text"]').val('test');
       expect(element.val()).to.equal('test');
